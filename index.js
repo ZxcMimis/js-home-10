@@ -1,28 +1,28 @@
 // завдання 1
 const confirmResult = confirm();
 
-let helloWorld = () => {
+let zitraks = () => {
     if (confirmResult) {
-        alert("HelloWorld");
+        alert("zitraks");
     }
 };
 
-helloWorld();
+zitraks();
 
 // завдання 2
 
-const random = Math.floor(Math.random() * 101);
-const promptWindow = prompt("Введіть число");
+const random = Math.floor(Math.random() * 666);
+const promptGap = prompt("Введіть число");
 
 let randomNumber = () => {
-    if (random === Number(promptWindow)) {
+    if (random === Number(promptGap)) {
         alert("Ви вгадали число");
         console.log(`Рандомне число: ${random}`);
-        console.log(`Ваше число: ${promptWindow}`)
+        console.log(`Ваше число: ${promptGap}`)
     } else {
         alert("Ви не вгадали число");
         console.log(`Рандомне число: ${random}`);
-        console.log(`Ваше число: ${promptWindow}`)
+        console.log(`Ваше число: ${promptGap}`)
     }
 }
 
@@ -41,7 +41,8 @@ document.addEventListener('click', clickCounter);
 
 // завдання 4
 
-const applyCallbackToEachElement = (arr, callback) => {
+const applyCallbackToEach
+    = (arr, callback) => {
     const result = [];
     for (let i = 0; i < arr.length; i++) {
         result.push(callback(arr[i]));
@@ -52,7 +53,7 @@ const applyCallbackToEachElement = (arr, callback) => {
 const array = [1, 2, 3, 4, 5];
 const squareCallback = (x) => x * x;
 
-const result = applyCallbackToEachElement(array, squareCallback);
+const result = applyCallbackToEach(array, squareCallback);
 console.log(result);
 
 // завдання 5
